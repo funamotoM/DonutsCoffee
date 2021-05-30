@@ -1,0 +1,241 @@
+body{
+  /*横スクロールが発生しているので、どうにかする*/
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 3240px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #111;
+  font-size: 1.5rem;
+  overflow-x: hidden;/*謎の横スクロールを消す奴*/
+}
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p{
+  font-size: 1.5rem;
+  color: #111;
+}
+.header{
+  position: sticky;/*上手くいかない*/
+  display: flex;
+  width: 100%;
+  height: 3%;
+  background-color: #000;
+  opacity: 0.9;
+}
+.heder__Wrapper{
+  position: sticky;
+  width: 100%;
+  height: 100%;
+}
+.header__logo{
+  margin-left: 0;
+  width: 30%;
+  height: 100%;
+}
+.heder__nav{
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  margin-right: 0;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  justify-content: space-between;
+  color: #fff;
+}
+
+ul{
+  display: flex;/**/
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  bottom: 20%;
+  align-items: center;
+}
+
+li{
+  padding: 0 30px;
+}
+/*モジュールのスタイル*/
+.catchText{
+  margin: 20px;
+  /*padding: 10PX いらない*/;
+  color: #111;
+}
+
+/*こっからメインのやつ*/
+/*main{}*/
+.topVisual{
+  display:block;
+  position: absolute;
+  top:3%;
+  width: 100%;
+  height: 25%;
+  color: #222;
+}
+.topVisual__inner{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/donutsTop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topVisual__img{
+  width: 100vw;
+  height: 100vh;
+}
+.aboutCafe{
+  display:block;
+  position: absolute;
+  top:28%;
+  width: 100%;
+  height: 25%;
+  color: #222;
+  background-color:#fff;
+}
+.aboutCafe__wrapper{
+  position: absolute;
+  margin: 20px;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+}
+.aboutCafe__img{
+  position: relative;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+.about__img--inner{/*元画像を切り抜く必要がある*/
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10%;
+  top: 12%;
+  left: 10%;
+  margin: auto 0;
+}
+
+.aboutCafe__text{
+  position: absolute;
+  padding: 10% 0;
+  width: 50%;
+  height: 100%;
+  top: 0%;
+  left: 48%;
+}
+
+.aboutCafe__textTitle{
+  position: absolute;
+  left: 16%;
+}
+
+.aboutCafe__Text--inner{
+  position: absolute;
+  margin: 10px;
+  padding: 0;
+  top: 40%;
+  left: 5%;
+  line-height: 300%;
+  letter-spacing: 10px;
+}
+
+.foodMenu{
+  display:block;
+  position: absolute;
+  top: 53%;
+  width: 100%;
+  height:  25%;
+  color: #222;
+  background-color:#0094B8;
+}
+.foodMenu__wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  top: 0;
+}
+
+.foodMenu__item{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  padding: 3%;
+}
+/*ここからカードの中身、繰り返しする*/
+.fooodMenu__item--card{
+  display: inline-flex;
+  top: 10%;
+  margin: 0 15px;
+  width: 360px;/*画像のサイズを統一後、変更*/
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cardImg__wrap {
+  width: 360px;
+}
+.card__img{
+  width: 360px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.card__content{
+  padding: 0.4em 0;
+  background-color: #fff;
+}
+
+.card__title,
+.card__text{
+  position: relative;
+  padding: 0 0.3em;
+  margin: 0;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.card__text {
+  padding: 0 0.3em;
+  font-size: 0.8em;
+  color: #111;
+  line-height: 300%;
+  etter-spacing: 10px;
+}
+
+
+
+
+
+
+.access__wrapper{
+  display:block;
+  position: absolute;
+  top: 78%;
+  width: 100%;
+  height:  25%;
+  color: #222;
+  background-color: #C52F42;
+}
+
+
+
+.footer{
+  position: absolute;
+  top: 100%;
+  color: #fff;
+  width: 100%;
+  height: 3%;
+  background-color: #000;
+}
