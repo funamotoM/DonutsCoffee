@@ -1,5 +1,4 @@
 body{
-  /*横スクロールが発生しているので、どうにかする*/
   display: block;
   position: relative;
   width: 100%;
