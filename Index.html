@@ -7,26 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donuts&Coffee</title>
   <link rel="stylesheet" href="CSS/Reset.css">
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="dist/style.css" SCSSにする>
 </head>
 
 <body>
   <!--なるべくBEMのキャメルケースで命名-->
   <!--もう一度最初から書き直したい-->
-<header class="header">
+<header id="heder" class="header">
   <div class="heder__Wrapper">
-    <div class="header__logo">
-      <img class="header__logoImg" src="" alt="店のロゴマーク">
-    </div>
+
+    <!--↑liのとして書き出す-->
     <nav class="heder__nav">
       <ul>
-        <li class="heder__nav--top">
+        <li class="header__logo"><a href="">LOGO</a></li><!--上手くいかないのでやめる-->
+        <li>
           <a href="">Top</a>
         </li>
-        <li class="heder__nav--menu">
+        <li>
           <a href="">Manu</a>
         </li>
-        <li class="heder__nav--Access">
+        <li>
           <a href="">Access</a>
         </li>
       </ul>
@@ -35,7 +35,7 @@
 </header>
 <!--コンテンツはここから-->
 <main>
-<section class="topVisual">
+<section id="top" class="topVisual">
   <div class="topVisual__wrapper">
     <div class="topVisual__inner">
       <div class="topVisual__img">
@@ -52,7 +52,7 @@
   </div>
 </section>
 
-<section class="aboutCafe">
+<section id="about" class="aboutCafe">
   <div class="aboutCafe__wrapper">
     <div class="aboutCafe__img">
       <img class="about__img--inner" src="img/aboutCafe.jpg" alt="ティーセット">
@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<section class="foodMenu">
+<section id="menu" class="foodMenu">
   <div class="foodMenu__wrapper">
     <div class="foodMenu__item">
       <!--ここからカードの内容-->
@@ -105,7 +105,7 @@
   </div>
 </section>
 
-<section class="access__wrapper">
+<section id="access" class="access__wrapper">
   <div class="access__inner">
     <div class="access__item">
       <div class="access__text">
@@ -119,7 +119,7 @@
   </div>
 </section>
 </main>
-<footer class="footer">
+<footer id="footer" class="footer">
   <div class="footer__wrapper">
     <div class="footer__innner">
       <div class="copyright">
